@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas with Lenny 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #121212;
+            --light: #f4f4f4;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--gold); }
+        
+        /* Header */
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.wynnlasvegas.com/-/media/images/wynn-las-vegas/hero/wynn-encore-exterior-night-1920.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Swiper Container */
+        .swiper { width: 100%; height: 75vh; }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 40px;
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .swiper-slide::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0; top: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+        }
+        .slide-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+        .badge {
+            background: var(--gold);
+            color: black;
+            padding: 5px 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 20px;
+        }
+        .links a {
+            color: var(--gold);
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 600;
+            border-bottom: 1px solid transparent;
+        }
+        .links a:hover { border-bottom: 1px solid var(--gold); }
+
+        /* Timeline */
+        .timeline-container {
+            padding: 20px;
+            background: #1a1a1a;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-top: 1px solid var(--gold);
+        }
+        .timeline-item {
+            display: inline-block;
+            padding: 15px 25px;
+            cursor: pointer;
+            color: #888;
+            transition: 0.3s;
+            text-align: center;
+        }
+        .timeline-item.active {
+            color: var(--gold);
+            font-weight: bold;
+            border-bottom: 3px solid var(--gold);
+        }
+        .travel-note {
+            font-size: 0.85rem;
+            color: #aaa;
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Vegas Getaway</h1>
+    <p>Dec 29 - Dec 30, 2025 | For Lenny & You</p>
+</header>
+
+<div class="swiper">
+    <div class="swiper-wrapper">
+        
+        <div class="swiper-slide" style="background-image: url('https://skyharbor.com/images/default-source/default-album/terminal4-hero.jpg');">
+            <div class="slide-content">
+                <span class="badge">Mon 07:00 AM</span>
+                <h2>Departure from PHX</h2>
+                <p>Arrive at PHX Sky Harbor. Parking at Terminal 4. TSA estimates: 25 mins.</p>
+                <div class="travel-note">Flight 1611 • Departs 08:54 AM</div>
+                <div class="links">
+                    <a href="https://maps.app.goo.gl/phx-airport-link" target="_blank">Google Maps PHX</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('https://www.wynnlasvegas.com/-/media/images/wynn-las-vegas/hotel/encore-resort/encore-resort-king-1920x1080.jpg');">
+            <div class="slide-content">
+                <span class="badge">Mon 09:30 AM</span>
+                <h2>Encore at Wynn</h2>
+                <p>Taxi from LAS to Encore (15 min). Gauge check-in for your Panoramic View King.</p>
+                <p><strong>Free Time:</strong> Stroll the Wynn gardens or the Plaza.</p>
+                <div class="links">
+                    <a href="https://www.wynnlasvegas.com" target="_blank">Wynn Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('https://www.wynnlasvegas.com/-/media/images/wynn-las-vegas/dining/tableau/tableau-brunch-1920.jpg');">
+            <div class="slide-content">
+                <span class="badge">Mon 02:00 PM</span>
+                <h2>Tableau (Wynn)</h2>
+                <p>Fine dining brunch overlooking the manicured Wynn Tower Suites pool.</p>
+                <div class="travel-note">Walking: 5 mins from Encore lobby</div>
+                <div class="links">
+                    <a href="https://www.wynnlasvegas.com/dining/fine-dining/tableau" target="_blank">View Menu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('https://newsroom.mgmresorts.com/images/122729/Bellagio_Conservatory_Holiday_2024.jpg');">
+            <div class="slide-content">
+                <span class="badge">Mon 04:00 PM</span>
+                <h2>Shopping & The Strip</h2>
+                <p>LV, Hermes, and the Bellagio Conservatory (Winter Display: "All Aboard for Holiday Bells and Whistles").</p>
+                <p><strong>Option:</strong> Relax at the hotel before dinner.</p>
+                <div class="travel-note">Taxi: 10 mins ($15) • Walking: 30 mins (1.5 miles)</div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('https://bellagio.mgmresorts.com/en/restaurants/spago-by-wolfgang-puck/_jcr_content/root/container/container/image.img.jpg/1614714652431.jpg');">
+            <div class="slide-content">
+                <span class="badge">Mon 09:30 PM</span>
+                <h2>Spago Bellagio</h2>
+                <p>Romantic dinner with a front-row view of the Fountains.</p>
+                <div class="links">
+                    <a href="https://bellagio.mgmresorts.com/en/restaurants/spago-by-wolfgang-puck.html" target="_blank">Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('https://www.wynnlasvegas.com/-/media/images/wynn-las-vegas/dining/the-buffet/buffet-redesign-1920.jpg');">
+            <div class="slide-content">
+                <span class="badge">Tue 08:00 AM</span>
+                <h2>The Buffet at Wynn</h2>
+                <p>Kick off Tuesday with one of the most visual dining experiences in Vegas.</p>
+                <div class="travel-note">Walking: 8 mins from Encore</div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('https://www.wynnlasvegas.com/-/media/images/wynn-las-vegas/amenities/spa-encore/spa-at-encore-entrance-1920.jpg');">
+            <div class="slide-content">
+                <span class="badge">Tue 09:30 AM</span>
+                <h2>Pool or Spa Time</h2>
+                <p>Relaxation at the Encore Tower Suites Pool or the world-class Spa.</p>
+                <p><strong>Option:</strong> Walk to the Venetian Canals (Shopping/Views).</p>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('https://www.wynnlasvegas.com/-/media/images/wynn-las-vegas/dining/cipriani/cipriani-dining-room-1920.jpg');">
+            <div class="slide-content">
+                <span class="badge">Tue 12:00 PM</span>
+                <h2>Cipriani Las Vegas</h2>
+                <p>Classic Venetian luxury at the Wynn Plaza. Try the signature Carpaccio.</p>
+                <div class="links">
+                    <a href="https://www.cipriani.com" target="_blank">Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('https://skyharbor.com/images/default-source/default-album/phx-sky-train.jpg');">
+            <div class="slide-content">
+                <span class="badge">Tue 01:45 PM</span>
+                <h2>Heading Home</h2>
+                <p>Checkout and Taxi to LAS. First Class return flight 1541.</p>
+                <div class="travel-note">Arrive PHX 05:57 PM</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="swiper-button-next" style="color: var(--gold);"></div>
+    <div class="swiper-button-prev" style="color: var(--gold);"></div>
+</div>
+
+<div class="timeline-container" id="timeline">
+    <div class="timeline-item active" onclick="goToSlide(0)">07:00<br>PHX</div>
+    <div class="timeline-item" onclick="goToSlide(1)">09:30<br>Arrival</div>
+    <div class="timeline-item" onclick="goToSlide(2)">14:00<br>Tableau</div>
+    <div class="timeline-item" onclick="goToSlide(3)">16:00<br>Shopping</div>
+    <div class="timeline-item" onclick="goToSlide(4)">21:30<br>Spago</div>
+    <div class="timeline-item" onclick="goToSlide(5)">08:00<br>Buffet</div>
+    <div class="timeline-item" onclick="goToSlide(6)">09:30<br>Relax</div>
+    <div class="timeline-item" onclick="goToSlide(7)">12:00<br>Cipriani</div>
+    <div class="timeline-item" onclick="goToSlide(8)">13:45<br>Exit</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        on: {
+            slideChange: function () {
+                updateTimeline(this.activeIndex);
+            },
+        },
+    });
+
+    function goToSlide(index) {
+        swiper.slideTo(index);
+    }
+
+    function updateTimeline(index) {
+        const items = document.querySelectorAll('.timeline-item');
+        items.forEach((item, i) => {
+            if (i === index) item.classList.add('active');
+            else item.classList.remove('active');
+        });
+        // Auto scroll timeline
+        const activeItem = items[index];
+        activeItem.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+</script>
+
+</body>
+</html>
